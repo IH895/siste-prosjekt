@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+    <title>Siste prosjekt</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: montserrat;
+        }
+
     
+
+
+        /*HOVEDSIDE*/
+
+        .hovedsidebakgrunn {
+            background-color: lightblue;
+        }
+
+        .hovedbilde {
+            position: relative;
+            width: 100%;
+
+        }
+
+        .hvor-tekst {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: 3px solid rgba(255, 255, 255, 0.89);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            padding: 100px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 35px;
+
+        }
+
+
+
+
+
+        .grid-div {
+            display: grid;
+           
+            height: 500px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        button {
+            font-family: montserrat;
+            font-weight: bold;
+            font-size: 17px;
+            border-radius: 30px;
+            padding: 8px 30px;
+            border: none;
+            background-color: rgb(163, 205, 238);
+
+
+
+        }
+
+        button:hover {
+            background-color: rgb(121, 179, 227);
+        }
+
+        button:active {
+            color: white;
+        }
+
+        .bilde-medtekst {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            /* You can adjust this to your preference */
+            overflow: hidden;
+        }
+
+        .bilde-medtekst img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures image fills the container without distortion */
+            display: block;
+        }
+
+        .bilde-medtekst button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+
+
+
+
+    <body class="hovedsidebakgrunn">
+
+
+
+        <div class="hovedbilde">
+            <img src="bilder/globe-5096555_1280.jpg" width="100%">
+            <div class="hvor-tekst">
+                <p> Hvor vil du reise? </p>
+            </div>
+
+
+            <div class="grid-div">
+
+                <div class="bilde-medtekst">
+                    <img src="bilder/beach-4852830_1280.jpg" alt="">
+                    <a href="land/thailand.html"> <button> Thaliand</button> </a>
+                </div>
+
+                <div class="bilde-medtekst">
+                    <img src="bilder/eiffel-tower-3862939_1280.jpg" alt="">
+                    <a href="land/frankrike.html"> <button>Frankrike</button> </a>
+                </div>
+
+                <div class="bilde-medtekst">
+                    <img src="bilder/new-york-4352072_1280.jpg" alt="">
+                    <a href="land/usa.html"> <button>USA</button></a>
+                </div>
+
+                <div class="bilde-medtekst">
+                    <img src="bilder/opera-house-4698517_1280.jpg" alt="">
+                    <a href="land/australia.html"> <button>Australia</button> </a>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+    </body>
+
+    </html>
+
+
 </body>
+
 </html>
